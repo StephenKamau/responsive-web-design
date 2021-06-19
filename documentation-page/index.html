@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>Introduction to CSS</h1>
+        </header>
+        <ul>
+            <li><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Basic_concepts_of_flexbox">Basic concepts of flexbox</a></li>
+            <li><a class="nav-link" href="#Basic_Concepts_of_grid_layout">Basic Concepts of grid layout</a></li>
+            <li><a class="nav-link" href="#Using_CSS_transforms">Using CSS transforms</a></li>
+            <li><a class="nav-link" href="#reference">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="introduction" class="main-section">
+            <header>
+                <h1>Introduction</h1>
+            </header>
+            <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on
+                paper, in speech, or on other media.</p>
+            <p>
+                CSS key concepts:
+            </p>
+            <ul>
+                <li>
+                    <p>The syntax and forms of the language</p>
+                </li>
+                <li>
+                    <p>Specificity, inheritance, and the Cascade</p>
+                </li>
+                <li>
+                    <p>CSS units and values and functional notations</p>
+                </li>
+                <li>
+                    <p>Box model and margin collapse</p>
+                </li>
+                <li>
+                    <p>The containing block</p>
+                </li>
+                <li>
+                    <p>Stacking and block-formatting contexts</p>
+                </li>
+                <li>
+                    <p>Initial, computed, used, and actual values</p>
+                </li>
+                <li>
+                    <p>CSS shorthand properties</p>
+                </li>
+                <li>
+                    <p>CSS Flexible Box Layout</p>
+                </li>
+                <li>
+                    <p>CSS Grid Layout</p>
+                </li>
+                <li>
+                    <p>CSS selectors</p>
+                </li>
+                <li>
+                    <p>Media queries</p>
+                </li>
+                <li>
+                    <p>Animation</p>
+                </li>
+            </ul>
+        </section>
+        <section id="Basic_concepts_of_flexbox" class="main-section">
+            <header>
+                <h1>Basic concepts of flexbox</h1>
+            </header>
+            <p>
+                The Flexible Box Module, usually referred to as flexbox, was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and powerful alignment capabilities. This article gives an outline
+                of the main features of flexbox, which we will be exploring in more detail in the rest of these guides.
+            </p>
+            <p>When we describe flexbox as being one dimensional we are describing the fact that flexbox deals with layout in one dimension at a time — either as a row or as a column. This can be contrasted with the two-dimensional model of CSS Grid Layout,
+                which controls columns and rows together.
+            </p>
+            <p>
+                <code>
+                .box {
+                    display: flex;
+                  }
+                </code>
+            </p>
+
+            <p>
+                <code>
+                .box {
+                    display: flex;
+                    flex-direction: row-reverse;
+                  }
+                </code>
+            </p>
+        </section>
+        <section id="Basic_Concepts_of_grid_layout" class="main-section">
+            <header>
+                <h1>Basic Concepts of grid layout</h1>
+            </header>
+            <p>
+                CSS Grid Layout introduces a two-dimensional grid system to CSS. Grids can be used to lay out major page areas or small user interface elements. This article introduces the CSS Grid Layout and the new terminology that is part of the CSS Grid Layout Level
+                1 specification. The features shown in this overview will then be explained in greater detail in the rest of this guide.
+            </p>
+            <p>
+                <code>
+                    .wrapper {
+                        display: grid;
+                      }
+                </code>
+            </p>
+        </section>
+        <section id="Using_CSS_transforms" class="main-section">
+            <header>
+                <h1>Using CSS transforms</h1>
+            </header>
+            <p>
+                By modifying the coordinate space, CSS transforms change the shape and position of the affected content without disrupting the normal document flow. This guide provides an introduction to using transforms.
+            </p>
+            <p>
+                CSS transforms are implemented using a set of CSS properties that let you apply affine linear transformations to HTML elements. These transformations include rotation, skewing, scaling, and translation both in the plane and in the 3D space.
+            </p>
+            <p>
+                <code>
+                    .back {
+                        background: rgba(0, 255, 0, 1);
+                        color: black;
+                        transform: rotateY(180deg) translateZ(50px);
+                      }
+                </code>
+            </p>
+            <p>
+                <code>
+                    .cube {
+                        width: 100%;
+                        height: 100%;
+                        backface-visibility: visible;
+                        perspective-origin: 150% 150%;
+                        transform-style: preserve-3d;
+                      }
+                </code>
+            </p>
+        </section>
+        <section id="reference" class="main-section">
+            <header>
+                <h1>Reference</h1>
+            </header>
+            <p>
+                <ul>
+                    <li>
+                        <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer noopener">MDN</a></p>
+                    </li>
+                </ul>
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+/* css variables */
+
+* {
+    --primary-color: #ECEFF1;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--primary-color, white);
+}
+
+main {
+    width: 80vw;
+    background-color: white;
+    margin: auto;
+}
+
+h1 {
+    margin: 16px 16px 0 16px;
+    padding: 16px;
+}
+
+
+/* Flex box */
+
+.column-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    margin: 16px;
+    padding: 16px;
+    border: solid 1px #E0E0E0;
+}
+
+.container {
+    grid-auto-flow: column;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.item {
+    margin: 16px;
+    padding: 16px;
+    border: solid 1px #E0E0E0;
+}
